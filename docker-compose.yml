@@ -1,20 +1,20 @@
 version: '3.8'
 services:
   movies:
-    image: pnegi5106/paytmmovies:latest
+    image: pradeep332/paytmmovies:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
   train:
-    image: pnegi5106/paytmtrain:latest
+    image: pradeep332/paytmtrain:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
   
   recharge:
-    image: pnegi51063/paytmrecharge:latest
+    image: pradeep332/paytmrecharge:latest
     ports:
       - "83:80"
     deploy:
